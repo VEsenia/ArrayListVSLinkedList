@@ -5,8 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
-    private static final int amountOper = 100;
-    private static final int amountForAverage = 5;
+    private static final int amountOper = 1000000;
+    private static final int amountForAverage = 5000;
 
     private static ArrayList arrList;
     private static LinkedList lnkList;
@@ -66,7 +66,7 @@ public class Main {
         //добавление элементов
         arrList = new ArrayList();
         lnkList = new LinkedList();
-        /*int allSumDurationArrList = addPasteOrDelElementsToList(arrList, TypeOper.add);
+        int allSumDurationArrList = addPasteOrDelElementsToList(arrList, TypeOper.add);
 
         int allSumDurationLnkList = addPasteOrDelElementsToList(lnkList, TypeOper.add);
         WriteInfo("Добавление", allSumDurationArrList, allSumDurationLnkList);
@@ -77,12 +77,12 @@ public class Main {
 
         allSumDurationLnkList = addPasteOrDelElementsToList(lnkList, TypeOper.delete);
         WriteInfo("Удаление", allSumDurationArrList, allSumDurationLnkList);
-*/
+
         System.out.println();
         //вставка элементов
-        int allSumDurationArrList = addPasteOrDelElementsToList(arrList, TypeOper.paste);
+        allSumDurationArrList = addPasteOrDelElementsToList(arrList, TypeOper.paste);
 
-        int allSumDurationLnkList = addPasteOrDelElementsToList(lnkList, TypeOper.paste);
+        allSumDurationLnkList = addPasteOrDelElementsToList(lnkList, TypeOper.paste);
         WriteInfo("Вставка", allSumDurationArrList, allSumDurationLnkList);
     }
 }
