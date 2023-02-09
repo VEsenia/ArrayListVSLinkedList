@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+//Тестирование ветки
 public class Main {
     private static final int amountOper = 1000000;
     private static final int amountForAverage = 5000;
